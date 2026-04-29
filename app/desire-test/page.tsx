@@ -1,0 +1,2 @@
+const questions = Array.from({length:40},(_,i)=>`Question ${i+1}: Preference prompt`);
+export default function DesireTest(){return <form className="space-y-3"><h2 className="text-2xl">40-Question Desire Test</h2>{questions.map(q=><div key={q} className="card"><p>{q}</p><select className="input"><option>Option A</option><option>Option B</option><option>Option C</option></select></div>)}<button className="btn">Submit Desire Test</button></form>}
