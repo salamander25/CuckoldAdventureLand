@@ -1,0 +1,1 @@
+export default function Privacy(){return <div className="card"><h2 className="text-2xl">Privacy Policy</h2><p>We prioritize discretion, consent, and minimal data exposure. Private photos require mutual grants.</p></div>}

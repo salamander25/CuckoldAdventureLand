@@ -1,0 +1,1 @@
+export default function Apply(){return <form className="card space-y-3"><h2 className="text-2xl">Apply to Join</h2><input className="input" placeholder="Email"/><input className="input" placeholder="Display name"/><textarea className="input" placeholder="Why join?"/><button className="btn">Submit application</button></form>}

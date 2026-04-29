@@ -1,0 +1,2 @@
+import { requestIntro } from '@/app/actions';
+export default function MemberProfile({params}:{params:{id:string}}){return <div className="card space-y-3"><h2 className="text-2xl">Member Profile #{params.id}</h2><p>Private photos are locked until mutual consent is granted.</p><form action={requestIntro}><input type="hidden" name="targetId" value={params.id}/><button className="btn">Request Intro</button></form><button className="btn bg-zinc-700">Request Private Photo Access</button></div>}
