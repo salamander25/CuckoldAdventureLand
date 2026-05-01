@@ -1,0 +1,1 @@
+export default function Admin(){return <section className="space-y-3"><h2 className="text-2xl">Admin Review Dashboard</h2><div className="card">Review applications, approve/reject profiles, hide profiles, review reports, and inspect intro requests. All admin actions are logged.</div></section>}
