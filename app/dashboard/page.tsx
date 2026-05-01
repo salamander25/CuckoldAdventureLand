@@ -1,0 +1,1 @@
+export default function Dashboard(){return <div className="card"><h2 className="text-2xl mb-3">Member Dashboard</h2><p>Track profile completion, match updates, intros, and private photo requests.</p></div>}

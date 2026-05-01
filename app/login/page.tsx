@@ -1,0 +1,1 @@
+export default function Login(){return <form className="card space-y-3"><h2 className="text-2xl">Login / Signup</h2><input className="input" placeholder="Email"/><input className="input" placeholder="Password" type="password"/><button className="btn">Continue</button></form>}

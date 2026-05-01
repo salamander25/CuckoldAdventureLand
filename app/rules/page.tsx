@@ -1,0 +1,1 @@
+export default function Rules(){return <div className="card"><h2 className="text-2xl">Community Rules</h2><ul className="list-disc pl-5"><li>No fake profiles.</li><li>No non-consensual behavior.</li><li>No automated impersonation or auto-messaging.</li><li>Respect hard-no boundaries.</li></ul></div>}
