@@ -62,3 +62,16 @@ Fixes:
 - Ensure registry is `https://registry.npmjs.org/`.
 - Remove restrictive corporate proxy/allowlist settings for npm scopes needed by this app.
 - Re-run `npm install` once registry access is restored.
+
+
+## Vercel framework detection fix
+If Vercel shows `No Output Directory named "public" found`, the project was likely configured as a static/other framework preset.
+
+Use the Next.js preset or keep `vercel.json` with:
+```json
+{
+  "framework": "nextjs"
+}
+```
+
+Do **not** set output directory to `public` for this app. Next.js output is managed by Vercel automatically.
