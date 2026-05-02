@@ -47,3 +47,34 @@ where id = '<USER_UUID>';
 - No hidden admin access to private photos.
 - Private photo access requires mutual grants.
 - Admin actions are logged.
+
+
+## Troubleshooting build failures
+If `npm install` fails with `403 Forbidden` for `registry.npmjs.org`, this is an environment/network policy issue (proxy or registry ACL), not an application code error.
+
+Checks:
+```bash
+npm config get registry
+npm ping
+```
+
+Fixes:
+- Ensure registry is `https://registry.npmjs.org/`.
+- Remove restrictive corporate proxy/allowlist settings for npm scopes needed by this app.
+- Re-run `npm install` once registry access is restored.
+
+
+## Vercel framework detection fix
+If Vercel shows `No Output Directory named "public" found`, the project was likely configured as a static/other framework preset.
+
+Use the Next.js preset or keep `vercel.json` with:
+```json
+{
+  "framework": "nextjs"
+}
+```
+
+Do **not** set output directory to `public` for this app. Next.js output is managed by Vercel automatically.
+
+> If your Vercel project UI is still set to an Output Directory of `public`, remove that value in Project Settings (or set it to `.next`) and redeploy.
+
