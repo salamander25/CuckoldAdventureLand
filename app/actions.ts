@@ -2,8 +2,9 @@
 
 import { scoreMatch } from '@/lib/match';
 
-export async function requestIntro(formData: FormData){
-  return { ok: true, message: `Intro requested for ${formData.get('targetId')}` };
+export async function requestIntro(formData: FormData): Promise<void> {
+  const targetId = formData.get('targetId');
+  console.log(`Intro requested for ${targetId}`);
 }
 
 export async function runMatch(){
