@@ -75,3 +75,6 @@ Use the Next.js preset or keep `vercel.json` with:
 ```
 
 Do **not** set output directory to `public` for this app. Next.js output is managed by Vercel automatically.
+
+> If your Vercel project UI is still set to an Output Directory of `public`, remove that value in Project Settings (or set it to `.next`) and redeploy.
+

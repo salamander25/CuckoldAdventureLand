@@ -19,4 +19,9 @@ export async function runMatch() {
     comms: 1,
     hardNoConflict: false
   });
+  console.log(`Intro requested for ${targetId}`);
+}
+
+export async function runMatch(){
+  return scoreMatch({ desiredType:'Bull', profileType:'Bull', distanceOk:true, privacy:1, experience:1, visual:1, video:1, comms:1, hardNoConflict:false });
 }
